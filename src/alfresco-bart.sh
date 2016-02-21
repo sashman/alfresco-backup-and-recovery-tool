@@ -136,7 +136,7 @@ function dbBackup {
 	fi
 	
 	if [ ! -d $LOCAL_BACKUP_DB_DIR ]; then
-		mkdir $LOCAL_BACKUP_DB_DIR
+		mkdir -p $LOCAL_BACKUP_DB_DIR
 	fi
 	
 	case $DBTYPE in 
